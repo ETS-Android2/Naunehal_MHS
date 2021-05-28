@@ -57,7 +57,6 @@ public class SectionMobileHealth extends AppCompatActivity implements EndSection
         bi = DataBindingUtil.setContentView(this, R.layout.activity_mobile_health);
         bi.setCallback(this);
         setSupportActionBar(bi.toolbar);
-        setTitle(R.string.mobilehealthserviceform_heading);
 
         /*
          * Get camp data and set it to xml
