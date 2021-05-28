@@ -44,8 +44,12 @@
     <string name="mh010">Gender</string>
     <string name="mh01001">Male</string>
     <string name="mh01002">Female</string>
-    <string name="mh011">Presenting Complaints</string>
-    <string name="mh012">Weight (KG)</string>
+    <string name="Q_mh010a"> mh010a </string>
+    <string name="mh010a"> Marital Status </string>
+    <string name="mh010a01"> Married </string>
+    <string name="mh010a02"> Un Married </string>
+    <string name="mh011"> Presenting Complaints </string>
+    <string name="mh012"> Weight (KG) </string>
 
     <string name="mh013"> Pallor </string>
     <string name="mh013a"> Positive </string>
@@ -61,6 +65,7 @@
     <string name="mh01701"> Antenatal Checkup </string>
     <string name="mh01702"> Pregnancy-Induced Hypertension </string>
     <string name="mh01703"> Suspected Anemia </string>
+    <string name="mh01704"> Not Pregnant </string>
     <string name="mh017077"> Other </string>
     <string name="mh017097"> None </string>
     <string name="mh018"> Diagnosis in Children </string>

@@ -571,7 +571,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         Cursor c = null;
         String[] columns = null;
 
-        String whereClause = Camps.TableCamp.COLUMN_CAMP_NO + "=? AND" + Camps.TableCamp.COLUMN_DIST_ID + "=?";
+        String whereClause = Camps.TableCamp.COLUMN_CAMP_NO + "=? AND " + Camps.TableCamp.COLUMN_DIST_ID + "=?";
         String[] whereArgs = {campNo, distCode};
         String groupBy = null;
         String having = null;
@@ -1613,7 +1613,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 whereArgs);
     }
 
-    public void updateSyncedMobileHealth(String id) {
+    public void updateSyncedcamp_patient_dtl(String id) {
         SQLiteDatabase db = this.getReadableDatabase();
 
 // New value for one column

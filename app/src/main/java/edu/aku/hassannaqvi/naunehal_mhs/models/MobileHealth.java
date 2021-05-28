@@ -33,6 +33,7 @@ public class MobileHealth extends BaseObservable {
     private String mh09d = StringUtils.EMPTY;
     private String patientType = StringUtils.EMPTY;
     private String mh010 = StringUtils.EMPTY;
+    private String mh010a = StringUtils.EMPTY;
     private String mh01101 = StringUtils.EMPTY;
     private String mh01102 = StringUtils.EMPTY;
     private String mh01103 = StringUtils.EMPTY;
@@ -47,6 +48,7 @@ public class MobileHealth extends BaseObservable {
     private String mh01701 = StringUtils.EMPTY;
     private String mh01702 = StringUtils.EMPTY;
     private String mh01703 = StringUtils.EMPTY;
+    private String mh01704 = StringUtils.EMPTY;
     private String mh017077 = StringUtils.EMPTY;
     private String mh017077x = StringUtils.EMPTY;
     private String mh017097 = StringUtils.EMPTY;
@@ -427,6 +429,17 @@ public class MobileHealth extends BaseObservable {
 
 
     @Bindable
+    public String getMh010a() {
+        return mh010a;
+    }
+
+    public void setMh010a(String mh010a) {
+        this.mh010a = mh010a;
+        notifyPropertyChanged(BR.mh010a);
+    }
+
+
+    @Bindable
     public String getMh01101() {
         return mh01101;
     }
@@ -577,6 +590,17 @@ public class MobileHealth extends BaseObservable {
     public void setMh01703(String mh01703) {
         this.mh01703 = mh01703;
         notifyPropertyChanged(BR.mh01703);
+    }
+
+
+    @Bindable
+    public String getMh01704() {
+        return mh01704;
+    }
+
+    public void setMh01704(String mh01704) {
+        this.mh01704 = mh01704;
+        notifyPropertyChanged(BR.mh01704);
     }
 
 
@@ -1412,6 +1436,7 @@ public class MobileHealth extends BaseObservable {
                     .put("mh09d", mh09d)
                     .put("patientType", patientType)
                     .put("mh010", mh010)
+                    .put("mh010a", mh010a)
                     .put("mh01101", mh01101)
                     .put("mh01102", mh01102)
                     .put("mh01103", mh01103)
@@ -1567,6 +1592,7 @@ public class MobileHealth extends BaseObservable {
                 this.mh09d = json.getString("mh09d");
                 this.patientType = json.getString("patientType");
                 this.mh010 = json.getString("mh010");
+                this.mh010a = json.getString("mh010a");
                 this.mh01101 = json.getString("mh01101");
                 this.mh01102 = json.getString("mh01102");
                 this.mh01103 = json.getString("mh01103");

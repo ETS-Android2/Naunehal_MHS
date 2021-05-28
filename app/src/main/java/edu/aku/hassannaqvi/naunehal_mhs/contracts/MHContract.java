@@ -10,7 +10,7 @@ public class MHContract {
 
 
     public static abstract class MHTable implements BaseColumns {
-        public static final String TABLE_NAME = "MobileHealth";
+        public static final String TABLE_NAME = "camp_patient_dtl";
         public static final String COLUMN_NAME_NULLABLE = "NULLHACK";
         public static final String COLUMN_PROJECT_NAME = "projectName";
         public static final String COLUMN_ID = "_id";

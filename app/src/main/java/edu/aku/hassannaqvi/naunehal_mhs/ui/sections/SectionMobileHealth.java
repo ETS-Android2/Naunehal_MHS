@@ -90,6 +90,7 @@ public class SectionMobileHealth extends AppCompatActivity implements EndSection
         bi.chkWeight.setOnCheckedChangeListener((compoundButton, b) -> Clear.clearAllFields(bi.mh012, !b));
         bi.chkHeight.setOnCheckedChangeListener((compoundButton, b) -> Clear.clearAllFields(bi.mh015, !b));
         bi.chkMUAC.setOnCheckedChangeListener((compoundButton, b) -> Clear.clearAllFields(bi.mh016, !b));
+        bi.mh01704.setOnCheckedChangeListener((compoundButton, b) -> Clear.clearAllFields(bi.llmh020, !b));
         bi.mh017097.setOnCheckedChangeListener((compoundButton, b) -> Clear.clearAllFields(bi.mh017check, !b));
         bi.mh018097.setOnCheckedChangeListener((compoundButton, b) -> Clear.clearAllFields(bi.mh018check, !b));
         bi.mh019097.setOnCheckedChangeListener((compoundButton, b) -> Clear.clearAllFields(bi.mh019check, !b));
@@ -301,6 +302,10 @@ public class SectionMobileHealth extends AppCompatActivity implements EndSection
                 : bi.mh01002.isChecked() ? "2"
                 : "-1");
 
+        mobileHealth.setMh010a(bi.mh010a01.isChecked() ? "1"
+                : bi.mh010a02.isChecked() ? "2"
+                : "-1");
+
         mobileHealth.setMh01101(bi.mh01101.getText().toString().trim().isEmpty() ? "-1" : bi.mh01101.getText().toString());
         mobileHealth.setMh01102(bi.mh01102.getText().toString().trim().isEmpty() ? "-1" : bi.mh01102.getText().toString());
         mobileHealth.setMh01103(bi.mh01103.getText().toString().trim().isEmpty() ? "-1" : bi.mh01103.getText().toString());
@@ -325,6 +330,7 @@ public class SectionMobileHealth extends AppCompatActivity implements EndSection
         mobileHealth.setMh01701(bi.mh01701.isChecked() ? "1" : "-1");
         mobileHealth.setMh01702(bi.mh01702.isChecked() ? "2" : "-1");
         mobileHealth.setMh01703(bi.mh01703.isChecked() ? "3" : "-1");
+        mobileHealth.setMh01704(bi.mh01704.isChecked() ? "4" : "-1");
         mobileHealth.setMh017077(bi.mh017077.isChecked() ? "77" : "-1");
         mobileHealth.setMh017077x(bi.mh017077x.getText().toString().trim().isEmpty() ? "-1" : bi.mh017077x.getText().toString());
         mobileHealth.setMh017097(bi.mh017097.isChecked() ? "97" : "-1");
